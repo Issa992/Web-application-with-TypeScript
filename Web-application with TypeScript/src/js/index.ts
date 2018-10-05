@@ -13,7 +13,9 @@ let numberInputElement: HTMLInputElement =
  {
      let numberString:string=numberInputElement.value;
      let number=Number(numberString);
-     let result:number=number / 0.035274;
+
+     let result:number=number * 0.035274;
+     
      showResult.innerHTML=result.toString();
      
      
@@ -31,5 +33,4 @@ let numberInputElement: HTMLInputElement =
 
 let showResult: HTMLDivElement = <HTMLDivElement>
 document.getElementById("showResult");
-showResult.addEventListener("click",convertToGram);
-
+// showResult.addEventListener("click",convertToGram);
